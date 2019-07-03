@@ -406,7 +406,6 @@ div div.named-bar {
 }
 div .progress-bar {
     background: #61892f;
-    transition: none;
 }
 .progress span {
     align-self: center;
