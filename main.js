@@ -32,7 +32,82 @@ $(document).ready(function() {
             pos + $(window).height() === $(document).height()) {
             highlightLink('contact');
         }
+
+        // Animate progress bars
+        let skillsTopset = $('.skills.col-md-6').offset().top;
+        let halfWindow =  $(window).scrollTop() + ($(window).height() * (2 / 3));
+        if (skillsTopset <= halfWindow) {
+            $(".progress-bar.progress-1").animate({width: '64%'}, {
+                duration: 2000,
+                easing: "easeOutExpo",
+                start: function() {
+                    setTimeout(function() {
+                        $(".progress-bar.progress-2").animate({width: '72%'}, {
+                            duration: 2000,
+                            easing: 'easeOutExpo',
+                            start: function() {
+                                setTimeout(function() {
+                                    $(".progress-bar.progress-3").animate({width: '60%'}, {
+                                        duration: 2000,
+                                        easing: 'easeOutExpo',
+                                        start: function() {
+                                            setTimeout(function() {
+                                                $(".progress-bar.progress-4").animate({width: '64%'}, {
+                                                    duration: 2000,
+                                                    easing: 'easeOutExpo',
+                                                    start: function() {
+                                                        setTimeout(function() {
+                                                            $(".progress-bar.progress-5").animate({width: '60%'}, {
+                                                                duration: 2000,
+                                                                easing: 'easeOutExpo',
+                                                                start: function() {
+                                                                    setTimeout(function() {
+                                                                        $(".progress-bar.progress-6").animate({width: '48%'}, {
+                                                                            duration: 2000,
+                                                                            easing: 'easeOutExpo',
+                                                                            start: function() {
+                                                                                setTimeout(function() {
+                                                                                    $(".progress-bar.progress-7").animate({width: '48%'}, {
+                                                                                        duration: 2000,
+                                                                                        easing: 'easeOutExpo',
+                                                                                        start: function() {
+                                                                                            setTimeout(function() {
+                                                                                                $(".progress-bar.progress-8").animate({width: '48%'}, {
+                                                                                                    duration: 2000,
+                                                                                                    easing: 'easeOutExpo',
+                                                                                                    start: function() {
+                                                                                                        setTimeout(function() {
+                                                                                                            $(".progress-bar.progress-9").animate({width: '40%'}, {
+                                                                                                                duration: 2000,
+                                                                                                                easing: 'easeOutExpo'
+                                                                                                            })
+                                                                                                        }, 70)
+                                                                                                    }
+                                                                                                })
+                                                                                            }, 70)
+                                                                                        }
+                                                                                    })
+                                                                                }, 70)
+                                                                            }
+                                                                        })
+                                                                    }, 70)
+                                                                }
+                                                            })
+                                                        }, 70)
+                                                    }
+                                                })
+                                            }, 70)
+                                        }
+                                    })
+                                }, 70)
+                            }
+                        })
+                    }, 70)
+                }
+            })
+        }
     })
+
     function highlightLink(anchor) {
         $('nav .active').removeClass('active');
         $('nav').find('[dest="' + anchor + '"]').addClass('active');
@@ -73,4 +148,15 @@ $(document).ready(function() {
         $(".pro-card-3 .animate-top").addClass('hidden');
         $(".pro-card-3 .animate-bottom").addClass('hidden');
     })
+});
+
+// jQueryUI
+$.easing.jswing = $.easing.swing;
+
+$.extend($.easing,
+{
+    def: 'easeOutQuad',
+    easeOutExpo: function (x, t, b, c, d) {
+        return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+    }
 });
