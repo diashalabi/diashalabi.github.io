@@ -238,7 +238,7 @@ li {
     display: grid;
     align-content: center;
     height: 100vh;
-    background: url(./images/programming-1873854\ \(1\).png);
+    background: url(./images/programingbg.png);
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -460,6 +460,14 @@ button.animate-bottom.btn:focus {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+.btn.btn-view {
+    background-color: #86c232;
+    color: whitesmoke;
+}
+.btn.btn-view:hover {
+    background-color: #78ae2d;
+    color: whitesmoke;
 }
 
 /* contact */
