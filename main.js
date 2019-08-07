@@ -52,25 +52,46 @@ $(document).ready(function() {
     });
 
     // Add opacity to the card text and button
-    $(".pro-card-1").hover(function() {
+    $(".pro-card-1").hover(function() {// one
         $(".pro-card-1 .animate-top").removeClass('hidden');
         $(".pro-card-1 .animate-bottom").removeClass('hidden');
     }, function() {
         $(".pro-card-1 .animate-top").addClass('hidden');
         $(".pro-card-1 .animate-bottom").addClass('hidden');
     });
-    $(".pro-card-2").hover(function() {
+    $(".pro-card-2").hover(function() {//two
         $(".pro-card-2 .animate-top").removeClass('hidden');
         $(".pro-card-2 .animate-bottom").removeClass('hidden');
     }, function() {
         $(".pro-card-2 .animate-top").addClass('hidden');
         $(".pro-card-2 .animate-bottom").addClass('hidden');
     });
-    $(".pro-card-3").hover(function() {
+    $(".pro-card-3").hover(function() {//three
         $(".pro-card-3 .animate-top").removeClass('hidden');
         $(".pro-card-3 .animate-bottom").removeClass('hidden');
     }, function() {
         $(".pro-card-3 .animate-top").addClass('hidden');
         $(".pro-card-3 .animate-bottom").addClass('hidden');
+    });
+    $(".pro-card-4").hover(function() {//four
+        $(".pro-card-4 .animate-top").removeClass('hidden');
+        $(".pro-card-4 .animate-bottom").removeClass('hidden');
+    }, function() {
+        $(".pro-card-4 .animate-top").addClass('hidden');
+        $(".pro-card-4 .animate-bottom").addClass('hidden');
+    });
+    $(".pro-card-5").hover(function() {//five
+        $(".pro-card-5 .animate-top").removeClass('hidden');
+        $(".pro-card-5 .animate-bottom").removeClass('hidden');
+    }, function() {
+        $(".pro-card-5 .animate-top").addClass('hidden');
+        $(".pro-card-5 .animate-bottom").addClass('hidden');
+    });
+    $(".pro-card-6").hover(function() {//six
+        $(".pro-card-6 .animate-top").removeClass('hidden');
+        $(".pro-card-6 .animate-bottom").removeClass('hidden');
+    }, function() {
+        $(".pro-card-6 .animate-top").addClass('hidden');
+        $(".pro-card-6 .animate-bottom").addClass('hidden');
     })
 });
