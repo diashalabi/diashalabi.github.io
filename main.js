@@ -26,8 +26,8 @@ $(document).ready(function() {
         var pos = $(window).scrollTop();
         var pos2 = pos + 50;
 
-        if (pos2 > $('#main').offset().top) {highlightLink('main');}
         if (pos2 > $('#about').offset().top) {highlightLink('about');}
+        if (pos2 > $('#portfolio').offset().top) {highlightLink('portfolio');}
         if (pos2 > $('#contact').offset().top ||
             pos + $(window).height() === $(document).height()) {
             highlightLink('contact');
