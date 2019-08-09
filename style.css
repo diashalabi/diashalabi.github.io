@@ -583,23 +583,27 @@ div .progress-bar[style] {
     transform: translateY(200px);
     opacity: 0
 }
-.project-container[data-scroll="in"] .project {
+.project[data-scroll="in"]:nth-child(1) {
     transform: translateY(0);
     opacity: 1;
 }
-.project-container[data-scroll="in"] .project:nth-child(2) {
+.project[data-scroll="in"]:nth-child(1) ~ .project {
+    transform: translateY(0);
+    opacity: 1;
+}
+.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(2) {
     transition-delay: 0.1s;
 }
-.project-container[data-scroll="in"] .project:nth-child(3) {
+.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(3) {
     transition-delay: 0.2s;
 }
-.project-container[data-scroll="in"] .project:nth-child(4) {
+.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(4) {
     transition-delay: 0.3s;
 }
-.project-container[data-scroll="in"] .project:nth-child(5) {
+.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(5) {
     transition-delay: 0.4s;
 }
-.project-container[data-scroll="in"] .project:nth-child(6) {
+.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(6) {
     transition-delay: 0.5s;
 }
 .card-img-overlay {
