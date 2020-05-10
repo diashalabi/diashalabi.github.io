@@ -8,6 +8,7 @@
         <meta name="keywords" content="webdesign, web development, UX, UI, iPhone apps, iPad apps, Branding, graphic design">
         <meta name="robots" content="index, follow">
         <meta name="author" content="Dia Shalabi">
+        <link href="scripts/lity/lity.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
@@ -21,10 +22,14 @@
                 <div id="particles-js" class="canvas"></div>
                 <div class="intro-container">
                     <h1 class="fadedOne">Dia Shalabi</h1>
-                    <h2 class="fadedTwo">I'm a Turkey based web designer &amp; front-end developer focused on crafting clean &amp; user-friendly experiences.</h2>
+                    <h2 class="fadedTwo">
+                        I am a full-stack web developer and UI/UX javascript specialist.
+                        Feel free to take a look at my latest projects on the web portfolio section.
+                    </h2>
                     <a class="fadedThree text-decoration-none check-portfolio" href="#portfolio">Check my portfolio</a>
                 </div>
             </section>
+
             <!-- Topnav -->
             <nav class="navbar navbar-expand-md navbar-dark bg-nav sticky-top" id="myMenu">
                 <a class="ml-5 navbar-brand" href="/"><img src="./images/logo_transparent.png" alt="Logo"></a>
@@ -45,6 +50,7 @@
                     </ul>
                 </div>
             </nav>
+
             <!-- About -->
             <section id="about" class="container">
                 <h2>About</h2>
@@ -95,214 +101,18 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="skills col-md-6">
-                            <div class="progress">
-                                <div class="progress-bar named-bar">CSS</div>
-                                <div class="progress-bar" style="width:64%"></div>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar named-bar">HTML</div>
-                                <div class="progress-bar" style="width:72%"></div>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar named-bar">React</div>
-                                <div class="progress-bar" style="width:64%"></div>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar named-bar">JavaScript</div>
-                                <div class="progress-bar" style="width:64%"></div>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar named-bar">Angular</div>
-                                <div class="progress-bar" style="width:64%"></div>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar named-bar">Node.js</div>
-                                <div class="progress-bar" style="width:60%"></div>
-                                <span>75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar named-bar">UI Design</div>
-                                <div class="progress-bar" style="width:60%"></div>
-                                <span>75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar named-bar">Photoshop</div>
-                                <div class="progress-bar" style="width:48%"></div>
-                                <span>60%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar named-bar">Illustrator</div>
-                                <div class="progress-bar" style="width:40%"></div>
-                                <span>50%</span>
-                            </div>
-                        </div>
+                        <div class="skills col-md-6"></div>
                     </div>
                 </div>
             </section>
+
             <!-- Portfolio -->
             <section id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="underscore"></div>
-                <div class="container">
-                    <div class="project-container row card-columns justify-content-center">
-                        <div class="project col-md-4 col-sm-6 col-10 card border-0 px-0">
-                            <img class="card-img-top" src="images/customer.png" alt="customer manager project">
-                            <div class="card-img-overlay pro-card-1">
-                                <h4 class="hidden animate-top card-title">Customer Manager SPA</h4>
-                                <p class="hidden animate-top card-text">AngularJS + AngularJS Materials</p>
-                                <button class="hidden animate-bottom btn" data-toggle="modal" data-target="#oneProject">LEARN MORE</a>
-                            </div>
-                        </div>
-                        <div class="project col-md-4 col-sm-6 col-10 card border-0 px-0">
-                            <img class="card-img-top" src="images/project-1.png" alt="todo app project">
-                            <div class="card-img-overlay pro-card-2">
-                                <h4 class="hidden animate-top card-title">Simple Todo App</h4>
-                                <p class="hidden animate-top card-text">AngularJS + AngularJS Materials</p>
-                                <button class="hidden animate-bottom btn" data-toggle="modal" data-target="#twoProject">LEARN MORE</a>
-                            </div>
-                        </div>
-                        <div class="project col-md-4 col-sm-6 col-10 card border-0 px-0">
-                            <img class="card-img-top" src="images/vue-quiz.png" alt="quiz project">
-                            <div class="card-img-overlay pro-card-3">
-                                <h4 class="hidden animate-top card-title">Quiz App</h4>
-                                <p class="hidden animate-top card-text">VueJS + Bootstrap Vue</p>
-                                <button class="hidden animate-bottom btn" data-toggle="modal" data-target="#threeProject">LEARN MORE</a>
-                            </div>
-                        </div>
-                        <div class="project col-md-4 col-sm-6 col-10 card border-0 px-0">
-                            <img class="card-img-top" src="images/adoption.png" alt="empty project">
-                            <div class="card-img-overlay pro-card-4">
-                                <h4 class="hidden animate-top card-title">Pets Adoption App</h4>
-                                <p class="hidden animate-top card-text">VueJS + Bootstrap Vue</p>
-                                <button class="hidden animate-bottom btn" data-toggle="modal" data-target="#fourProject">LEARN MORE</a>
-                            </div>
-                        </div>
-                        <div class="project col-md-4 col-sm-6 col-10 card border-0 px-0">
-                            <img class="card-img-top" src="images/vat-checker.png" alt="vat checker project">
-                            <div class="card-img-overlay pro-card-5">
-                                <h4 class="hidden animate-top card-title">VAT Checker</h4>
-                                <p class="hidden animate-top card-text">React + Bootstrap</p>
-                                <button class="hidden animate-bottom btn" data-toggle="modal" data-target="#fiveProject">LEARN MORE</a>
-                            </div>
-                        </div>
-                        <div class="project col-md-4 col-sm-6 col-10 card border-0 px-0">
-                            <img class="card-img-top" src="images/gray.jpg" alt="empty project">
-                            <div class="card-img-overlay pro-card-6">
-                                <h4 class="hidden animate-top card-title">Empty Project</h4>
-                                <p class="hidden animate-top card-text">Coming Soon</p>
-                                <button class="hidden animate-bottom btn" data-toggle="modal" data-target="#sixProject">LEARN MORE</a>
-                            </div>
-                        </div>
-                        <!-- Card Modals -->
-                        <div class="modal fade" id="oneProject">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Customer Manager</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        This is a customer manager like app, it sends a GET request to an API to get the customers' information from and displays it on the screen.
-                                        You can add more customers to manage, or you can edit the information of existing customers or delete all of their information.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://diatrex.github.io/customermanager/" class="btn btn-view" role="button">View Website</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="twoProject">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Todo App</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        This Todo App is a simple app that I built using AngularJS in addition to AngularJS Materials.
-                                        You can create new Todos by clicking the plus sign and you can delete the todo if you have completed it.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://diatrex.github.io/todoapp/" class="btn btn-view" role="button">View Website</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="threeProject">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Quiz App</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        This Quiz App is a simple project that I worked on using VueJS for the front-end and the bootstrap-vue library for the stylings.
-                                        The quiz containes 10 questions about animals that have been fetched from an API using GET method.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://diatrex.github.io/vue-quiz/" class="btn btn-view" role="button">View Website</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="fourProject">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Pets Adoption App</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        This project is about adopting a pet from a list of pets (dogs and cats), you can add a pet by filling the form in the home screen.
-                                        You can see more information about the pet by clicking his/her name.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://diatrex.github.io/vue-adopt-pets/" class="btn btn-view" role="button">View Website</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="fiveProject">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">VAT Checker</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        In this app, you can check the validaty of your VAT Number, the valid VAT Numbers are fetched from an API.
-                                        If the VAT Number is valid, you get a success message, else you get an error.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://diatrex.github.io/vat-checker/" class="btn btn-view" role="button">View Website</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="sixProject">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Empty Project</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        Will be filled when I create more beautiful projects.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn-danger btn" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="project-container"></div>
             </section>
+
             <!-- Contact -->
             <section id="contact" class="overflow-hidden">
                 <h1 class="mx-auto">Ok, let's create <br> something great</h1>
@@ -310,16 +120,13 @@
                 <a class="text-decoration-none getInTouch" href="mailto:diahshalabi@hotmail.com">Get in touch</a>
                 <ul class="socials">
                     <li class="social twitter">
-                        <a class="text-decoration-none" href="https://twitter.com/diatrex_">Twitter</a>
+                        <a class="text-decoration-none" href="https://twitter.com/dia_shalabi">Twitter</a>
                     </li>
                     <li class="social dribbble">
-                        <a class="text-decoration-none" href="https://dribbble.com/diatrex">Dribbble</a>
-                    </li>
-                    <li class="social facebook">
-                        <a class="text-decoration-none" href="https://www.facebook.com/diahaldin.shalabi">Facebook</a>
+                        <a class="text-decoration-none" href="https://dribbble.com/diashalabi">Dribbble</a>
                     </li>
                     <li class="social instagram">
-                        <a class="text-decoration-none" href="https://www.instagram.com/diatrex_/">Instagram</a>
+                        <a class="text-decoration-none" href="https://www.instagram.com/diashalabi">Instagram</a>
                     </li>
                 </ul>
             </section>
@@ -327,18 +134,19 @@
                 <p id="copy"><span>&copy; 2019 <a class="text-decoration-none" href="mailto:diahshalabi@hotmail.com">Dia Shalabi</a></span> . Made in Turkey</p>
     
                 <ul id="follow-links">
-                    <li id="follow-twitter"><a class="text-decoration-none" href="https://twitter.com/diatrex_">Follow me on twitter</a></li>
-                    <li id="follow-dribbble"><a class="text-decoration-none" href="https://dribbble.com/diatrex">Follow me on dribbble</a></li>
+                    <li id="follow-twitter"><a class="text-decoration-none" href="https://twitter.com/dia_shalabi">Follow me on twitter</a></li>
+                    <li id="follow-dribbble"><a class="text-decoration-none" href="https://dribbble.com/diashalabi">Follow me on dribbble</a></li>
                 </ul>
     
                 <p id="footer-about">This site was built with great tools like <a class="text-decoration-none" href="https://www.adobe.com/products/photoshop.html">Photoshop</a>, <a class="text-decoration-none" href="https://tinypng.com/">Tinypng</a> & <a class="text-decoration-none" href="https://www.flaticon.com/">Flaticon</a>.</p>
             </footer>
         </div>
-        <script src="scripts/particles.js"></script>
-        <script src="scripts/app.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="scripts/particles/particles.js"></script>
+        <script src="scripts/particles/app.js"></script>
         <script src="scripts/scroll-out.js"></script>
+        <script src="scripts/lity/lity.js"></script>
         <script>
             let skill = $('.skills');
             ScrollOut({
@@ -347,6 +155,6 @@
                 once: true,
             })
         </script>
-        <script src="main.js"></script>
+        <script src="scripts/main.js"></script>
     </body>
 </html>

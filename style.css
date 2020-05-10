@@ -496,6 +496,9 @@ div .progress {
     height: 2.3em;
     margin-bottom: 0.8em;
 }
+.progress .d-flex {
+    width: 80%;
+}
 div div.named-bar {
     width: 20%;
     background: #86c232;
@@ -538,7 +541,6 @@ div .progress-bar[style] {
     transition-delay: 0.7s;
 }
 .progress span {
-    align-self: center;
     position: absolute;
     right: 1em;
 }
@@ -546,7 +548,7 @@ div .progress-bar[style] {
 /* portfolio */
 #portfolio {
     background-color: #f5f5f5;
-    padding: 6em 0;
+    padding: 6em 0 0;
     width: 100%;
     position: relative;
 }
@@ -592,74 +594,50 @@ div .progress-bar[style] {
     transform: translateX(0);
     opacity: 1;
 }
-.project {
-    margin-bottom: 0 !important;
-    transition: 0.5s;
-    transform: translateY(200px);
-    opacity: 0
+.project-container .row {
+    padding: 3.75rem 1.75rem;
 }
-.project[data-scroll="in"]:nth-child(1) {
-    transform: translateY(0);
-    opacity: 1;
+@media screen and (min-width: 1200px) {
+    .project-container .row {
+        padding: 6.25rem 1.75rem;
+    }
 }
-.project[data-scroll="in"]:nth-child(1) ~ .project {
-    transform: translateY(0);
-    opacity: 1;
+.project-container .border-bottom:first-child .row {
+    padding-top: 0;
 }
-.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(2) {
-    transition-delay: 0.1s;
+.showcase__description {
+    font-family: 'Raleway', sans-serif;
 }
-.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(3) {
-    transition-delay: 0.2s;
+.color-gray {
+    color: gray;
 }
-.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(4) {
-    transition-delay: 0.3s;
-}
-.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(5) {
-    transition-delay: 0.4s;
-}
-.project[data-scroll="in"]:nth-child(1) ~ .project:nth-child(6) {
-    transition-delay: 0.5s;
-}
-.card-img-overlay {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-.card-img-overlay:hover {
-    background-color: #f5f5f5;
-}
-.animate-top.card-text {
+.color-gray span {
     color: #86c232;
 }
-button.animate-bottom.btn {
-    border: 2px solid #86c232;
-    border-radius: 0;
-}
-button.animate-bottom.btn:hover {
+.color-gray ~ .btn-preview {
+    color: #fff;
     background-color: #86c232;
-    color: white;
+    border-color: #86c232;
 }
-button.animate-bottom.btn:focus {
-    box-shadow: none;
-}
-.animate-top, button.animate-bottom {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-.btn.btn-view {
-    background-color: #86c232;
-    color: whitesmoke;
-}
-.btn.btn-view:hover {
+.color-gray ~ .btn-preview:hover, .color-gray ~ .btn-preview:active {
+    color: #fff;
     background-color: #78ae2d;
-    color: whitesmoke;
+    border-color: #78ae2d;
+}
+.color-gray ~ .btn-preview:focus {
+    box-shadow: unset;
+}
+.color-gray ~ .btn-visit {
+    color: #86c232;
+    border-color: #86c232;
+}
+.color-gray ~ .btn-visit:hover, .color-gray ~ .btn-visit:active {
+    color: #fff;
+    background-color: #86c232;
+    border-color: #86c232;
+}
+.color-gray ~ .btn-visit:focus {
+    box-shadow: unset;
 }
 
 /* contact */
