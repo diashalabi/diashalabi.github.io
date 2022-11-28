@@ -120,18 +120,11 @@ $(document).ready(function() {
             link: 'https://my.bonabag.com/',
         },
         {
-            name: 'Berlin Barbers',
-            thumbnail: 'barberlin.png',
-            description: 'A web app that allows you to book an appointment online.',
+            name: 'Academic Support',
+            thumbnail: 'acasup.png',
+            description: 'A website to help students with their assignment.',
             builtWith: 'Laravel',
-            link: 'https://berlinbarbers.com/',
-        },
-        {
-            name: 'Binlerce Araba',
-            thumbnail: 'binlercearaba.png',
-            description: 'A website for buying and selling used vehicles.',
-            builtWith: 'Laravel',
-            link: 'https://binlercearaba.com/',
+            link: 'https://academicsupport.me/',
         },
         {
             name: 'Emlak 24',
