@@ -99,7 +99,7 @@ $(document).ready(function() {
     // Add portfolio
     const projects = [
         {
-            name: 'Openclassify',
+            name: 'OpenClassify',
             thumbnail: 'openclassify.png',
             description: 'OpenClassify is modular and one of the most advanced open source classified app script built with Laravel.',
             builtWith: 'Laravel',
@@ -120,11 +120,11 @@ $(document).ready(function() {
             link: 'https://academicsupport.me/',
         },
         {
-            name: 'Emlak 24',
-            thumbnail: 'emlak24.png',
-            description: 'Create a custom demand that suits your inquiries and the agents will send you the ads that they find suitable.',
+            name: 'AiroLuggage',
+            thumbnail: 'airo.png',
+            description: 'AiroLuggage provides a National and International Luggage and Baggage Delivery Service so travelling is safe, easy and stress-free.',
             builtWith: 'Laravel & VueJS',
-            link: 'https://emlak24.com/',
+            link: 'https://airoluggage.com/',
         },
         {
             name: 'Celep',
