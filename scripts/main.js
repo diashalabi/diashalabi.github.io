@@ -2,15 +2,8 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         // Fading the background elements
-        var windowH = $(window).height();
-        var fadedOneSet = $('.fadedOne').offset().top - $(window).scrollTop();
         var fadedTwoSet = $('.fadedTwo').offset().top - $(window).scrollTop();
         var fadedThreeSet = $('.fadedThree').offset().top - $(window).scrollTop();
-        if ($(this).scrollTop() > fadedOneSet) {
-            $('.fadedOne').addClass('hidden')
-        } else {
-            $('.fadedOne').removeClass('hidden');
-        }
         if ($(this).scrollTop() > fadedTwoSet) {
             $('.fadedTwo').addClass('hidden')
         } else {
@@ -59,31 +52,31 @@ $(document).ready(function() {
         },
         {
             name: 'CSS',
-            percentage: 80,
+            percentage: 85,
         },
         {
             name: 'JavaScript',
-            percentage: 80,
+            percentage: 85,
         },
         {
             name: 'PHP',
-            percentage: 75,
+            percentage: 90,
         },
         {
             name: 'Laravel',
-            percentage: 80,
+            percentage: 90,
         },
         {
             name: 'VueJS',
-            percentage: 80,
+            percentage: 85,
         },
         {
             name: 'AngularJS',
-            percentage: 75,
+            percentage: 80,
         },
         {
             name: 'React',
-            percentage: 75,
+            percentage: 85,
         },
         {
             name: 'Node.js',
@@ -93,7 +86,7 @@ $(document).ready(function() {
 
     skills.forEach(skill => {
         $('.skills').append(`
-            <div class="progress">
+            <div class="progress rounded-0">
                 <div class="progress-bar named-bar">${skill.name}</div>
                 <div class="d-flex align-items-center">
                     <div class="progress-bar h-100" style="width: ${skill.percentage}%"></div>
@@ -152,13 +145,13 @@ $(document).ready(function() {
                         </div>
                         <div class="col-lg-5 mx-auto py-3">
                             <h3 class="mb-4">${project.name}</h3>
-                            <p class="showcase__description mb-4 color-gray">${project.description}</p>
-                            <p class="color-gray mb-4"><small>Built with <span>${project.builtWith}</span></small>.</p>
+                            <p class="showcase__description mb-4 color-theme">${project.description}</p>
+                            <p class="color-theme mb-4"><small>Built with <span>${project.builtWith}</span></small>.</p>
                             <a href="${project.link}" data-lity
-                                class="btn btn-preview mr-lg-3 d-none d-lg-inline-block rounded-pill px-4 py-2">
+                                class="btn btn-preview mr-lg-3 d-none d-lg-inline-block rounded-0 px-4 py-2">
                                 Preview
                             </a>
-                            <a href="${project.link}" class="btn btn-visit rounded-pill px-4 py-2"
+                            <a href="${project.link}" class="btn btn-visit rounded-0 px-4 py-2"
                                 target="_blank">
                                 Visit site
                             </a>

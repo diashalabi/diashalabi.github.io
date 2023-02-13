@@ -12,24 +12,24 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
-  
+
   {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 40,
         "density": {
-          "enable": true,
+          "enable": false,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#e4ddcf"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 1,
-          "color": "#86c232"
+          "color": "#e4ddcf"
         },
         "polygon": {
           "nb_sides": 5
@@ -55,7 +55,7 @@ particlesJS('particles-js',
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 1,
           "size_min": 0.1,
           "sync": false
         }
@@ -63,13 +63,13 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#e4ddcf",
         "opacity": 0.4,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 1,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -86,7 +86,7 @@ particlesJS('particles-js',
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
           "enable": true,

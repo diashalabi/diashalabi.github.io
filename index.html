@@ -9,8 +9,8 @@
         <meta name="robots" content="index, follow">
         <meta name="author" content="Dia Shalabi">
         <link href="scripts/lity/lity.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     </head>
@@ -21,18 +21,17 @@
             <section id="home" class="home">
                 <div id="particles-js" class="canvas"></div>
                 <div class="intro-container">
-                    <h1 class="fadedOne">Dia Shalabi</h1>
                     <h2 class="fadedTwo">
-                        I am a full-stack web developer and UI/UX javascript specialist.
-                        Feel free to take a look at my latest projects on the web portfolio section.
+                        I am Dia, a full stack web developer experienced in creating dynamic user interfaces, designing and
+                        developing databases, and deploying web applications using cloud services.
                     </h2>
                     <a class="fadedThree text-decoration-none check-portfolio" href="#portfolio">Check my portfolio</a>
                 </div>
             </section>
 
             <!-- Topnav -->
-            <nav class="navbar navbar-expand-md navbar-dark bg-nav sticky-top" id="myMenu">
-                <a class="ml-5 navbar-brand" href="/"><img src="./images/logo_transparent.png" alt="Logo"></a>
+            <nav class="navbar navbar-expand-md navbar-light bg-nav sticky-top" id="myMenu">
+                <a class="ml-5 navbar-brand" href="/">DIA</a>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -52,59 +51,86 @@
             </nav>
 
             <!-- About -->
-            <section id="about" class="container">
-                <h2>About</h2>
-                <div class="underscore"></div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="card border-0 col-md-3 col-6">
-                            <img class="mx-auto card-img-top frid" src="./images/dashboard.png" alt="dashboard">
-                            <div class="card-body px-0">
-                                <h3>Fast</h3>
-                                <p>Fast load times and lag free interaction, my highest priority.</p>
+            <div id="aboutWrapper" class="border-bottom">
+                <section id="about" class="container">
+                    <h2>About</h2>
+                    <div class="underscore"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="card border-0 col-md-3 col-6">
+                                <div class="mx-auto card-img-top frid rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 12C5 8.13401 8.13401 5 12 5M16.4999 7.5L11.9999 12M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12Z" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h3>Fast</h3>
+                                    <p>Fast load times and lag free interaction, my highest priority.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card border-0 col-md-3 col-6">
-                            <img class="mx-auto card-img-top frid" src="./images/devices.png" alt="device">
-                            <div class="card-body px-0">
-                                <h3>Responsive</h3>
-                                <p>My layouts will work on any device, big or small.</p>
+                            <div class="card border-0 col-md-3 col-6">
+                                <div class="mx-auto card-img-top frid rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                                        <g clip-path="url(#clip0_901_2601)">
+                                            <path d="M1 10V1.995C1 1.442 1.447 1 2 1H30C30.553 1 31 1.442 31 1.995V18M21 30.998L18 29.995V25H22M22 21H18M31 30C31 30.553 30.553 31 30 31H26C25.447 31 25 30.553 25 30V22C25 21.447 25.447 21 26 21H30C30.553 21 31 21.447 31 22V30ZM15 30C15 30.553 14.553 31 14 31H2C1.447 31 1 30.553 1 30V14C1 13.447 1.447 13 2 13H14C14.553 13 15 13.447 15 14V30Z" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_901_2601">
+                                                <rect width="32" height="32" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h3>Responsive</h3>
+                                    <p>My layouts will work on any device, big or small.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card border-0 col-md-3 col-6">
-                            <img class="mx-auto card-img-top frid" src="./images/lightbulb.png" alt="lightbulb">
-                            <div class="card-body px-0">
-                                <h3>Intuitive</h3>
-                                <p>Strong preference for easy to use, intuitive UX/UI.</p>
+                            <div class="card border-0 col-md-3 col-6">
+                                <div class="mx-auto card-img-top frid rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-42.5 0 310.5 310.5">
+                                        <g id="lamp" transform="translate(-521.713 -3050.916)">
+                                            <path id="Path_18" data-name="Path 18" d="M714.116,3083.918a111.848,111.848,0,0,0-79.645-33c-62.1,0-112.758,50.542-112.758,112.668a112.287,112.287,0,0,0,55.269,97.068v68.041a32.735,32.735,0,0,0,32.458,32.723h50.28c17.648,0,32.262-14.7,32.262-32.723v-68.1a112.649,112.649,0,0,0,22.134-176.675Zm-54.4,253.5H609.44c-4.32,0-8.458-4.14-8.458-8.723v-19.277h67v19.277C667.982,3333.276,663.935,3337.416,659.72,3337.416Zm14.738-94.89a11.9,11.9,0,0,0-6.476,10.848v32.042h-21v-78h29.6a12,12,0,1,0,0-24H592.99a12,12,0,1,0,0,24h29.992v78h-22v-31.989a11.894,11.894,0,0,0-6.481-10.849c-30.022-14.915-48.551-45.183-48.551-78.994a88.5,88.5,0,0,1,177,0C722.947,3197.355,704.461,3227.6,674.458,3242.526Z" fill="#1e1e1e"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h3>Intuitive</h3>
+                                    <p>Strong preference for easy to use, intuitive UX/UI.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card border-0 col-md-3 col-6">
-                            <img class="mx-auto card-img-top frid" src="./images/rocket.png" alt="rocket">
-                            <div class="card-body px-0">
-                                <h3>Dynamic</h3>
-                                <p>Websites don't have to be static, I love making pages come to life.</p>
+                            <div class="card border-0 col-md-3 col-6">
+                                <div class="mx-auto card-img-top frid rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#1e1e1e" viewBox="0 0 16 16" id="rocket-16px">
+                                        <path id="Path_54" data-name="Path 54" d="M-3.5,0H-7.028a6.257,6.257,0,0,0-5.466,3.2l-1.137,1.806A5.5,5.5,0,0,0-19,10.5a.5.5,0,0,0,.5.5h1.793L-14,13.707V15.5a.5.5,0,0,0,.5.5,5.5,5.5,0,0,0,5.493-5.369l1.782-1.122A6.271,6.271,0,0,0-3,4.028V.5A.5.5,0,0,0-3.5,0ZM-4,4.028a5.284,5.284,0,0,1-2.734,4.62l-6.695,4.216-2.435-2.435,4.23-6.719A5.274,5.274,0,0,1-7.028,1H-4ZM-14.305,6.076-16.776,10h-1.2A4.508,4.508,0,0,1-14.305,6.076Zm1.305,8.9v-1.2l3.924-2.471A4.506,4.506,0,0,1-13,14.972Zm2.077-9.857A2.811,2.811,0,0,0-8.115,7.923,2.81,2.81,0,0,0-5.308,5.115,2.81,2.81,0,0,0-8.115,2.308,2.811,2.811,0,0,0-10.923,5.115Zm2.808,1.808A1.81,1.81,0,0,1-9.923,5.115,1.81,1.81,0,0,1-8.115,3.308,1.809,1.809,0,0,1-6.308,5.115,1.809,1.809,0,0,1-8.115,6.923Z" transform="translate(19)"/>
+                                    </svg>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h3>Dynamic</h3>
+                                    <p>Websites don't have to be static, I love making pages come to life.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="info-skills mt-5 container-fluid">
-                    <div class="row overflow-hidden">
-                        <div class="card border-0 px-0 info px-0 col-md-6">
-                            <img class="card-img-top me mx-auto" src="./images/me.png" alt="My photo">
-                            <div class="card-body">
-                                <h4>Who's this guy?</h4>
-                                <p>I'm a Front-End Developer in Turkey, Ist.
-                                    <br>
-                                    I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-                                    <br>
-                                    <a class="text-decoration-none" href="#contact">Let's make something special.</a>
-                                </p>
+                    <div class="info-skills mt-5 container-fluid">
+                        <div class="row overflow-hidden">
+                            <div class="card border-0 px-0 info px-0 col-md-6">
+                                <img class="card-img-top me mx-auto rounded-circle" src="./images/me.png" alt="My photo">
+                                <div class="card-body">
+                                    <h4>Who's this guy?</h4>
+                                    <p>I'm a Full-Stack Developer in Turkey, Ist.
+                                        <br>
+                                        I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                                        <br>
+                                        <a href="#contact">Let's make something special.</a>
+                                    </p>
+                                </div>
                             </div>
+                            <div class="skills col-md-6"></div>
                         </div>
-                        <div class="skills col-md-6"></div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Portfolio -->
             <section id="portfolio">
@@ -114,31 +140,39 @@
             </section>
 
             <!-- Contact -->
-            <section id="contact" class="overflow-hidden">
+            <section id="contact" class="overflow-hidden border-bottom">
                 <h1 class="mx-auto">Ok, let's create <br> something great</h1>
                 <p>If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.</p>
-                <a class="text-decoration-none getInTouch" href="mailto:diahshalabi@hotmail.com">Get in touch</a>
-                <ul class="socials">
-                    <li class="social twitter">
-                        <a class="text-decoration-none" href="https://twitter.com/dia_shalabi">Twitter</a>
-                    </li>
-                    <li class="social dribbble">
-                        <a class="text-decoration-none" href="https://dribbble.com/diashalabi">Dribbble</a>
-                    </li>
-                    <li class="social instagram">
-                        <a class="text-decoration-none" href="https://www.instagram.com/diashalabi">Instagram</a>
-                    </li>
-                </ul>
+                <a class="text-decoration-none getInTouch" href="mailto:diashalabi@outlook.com">Get in touch</a>
             </section>
-            <footer class="foot">
-                <p id="copy"><span>&copy; 2019 <a class="text-decoration-none" href="mailto:diahshalabi@hotmail.com">Dia Shalabi</a></span> . Made in Turkey</p>
+            <footer class="foot d-flex align-items-center justify-content-between">
+                <p id="copy">@2023 DIA SHALABI</p>
     
-                <ul id="follow-links">
-                    <li id="follow-twitter"><a class="text-decoration-none" href="https://twitter.com/dia_shalabi">Follow me on twitter</a></li>
-                    <li id="follow-dribbble"><a class="text-decoration-none" href="https://dribbble.com/diashalabi">Follow me on dribbble</a></li>
+                <ul id="follow-links" class="list-unstyled mb-0">
+                    <li id="follow-linkedin" class="mr-2">
+                        <a class="text-decoration-none" target="_blank" href="https://www.linkedin.com/in/diashalabi/">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#e4ddcf" height="24px" width="24px" version="1.1" id="Layer_1" viewBox="0 0 310 310" xml:space="preserve">
+                                <g id="XMLID_801_">
+                                    <path id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73   C77.16,101.969,74.922,99.73,72.16,99.73z"/>
+                                    <path id="XMLID_803_" d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4   c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"/>
+                                    <path id="XMLID_804_" d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599   c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319   c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995   C310,145.43,300.549,94.761,230.454,94.761z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li id="follow-email">
+                        <a class="text-decoration-none" href="mailto:diashalabi@outlook.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24px" width="24px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0{fill:#e4ddcf;}
+                                </style>
+                                <g>
+                                    <path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345   c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345   C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203   c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958   c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064   c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571   c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637   L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136   C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435   C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959   l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959   C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8   V385.92z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-    
-                <p id="footer-about">This site was built with great tools like <a class="text-decoration-none" href="https://www.adobe.com/products/photoshop.html">Photoshop</a>, <a class="text-decoration-none" href="https://tinypng.com/">Tinypng</a> & <a class="text-decoration-none" href="https://www.flaticon.com/">Flaticon</a>.</p>
             </footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

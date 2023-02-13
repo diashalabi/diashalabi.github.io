@@ -4,15 +4,11 @@
 * {
     box-sizing: border-box;
 }
-::selection {
-    color: whitesmoke;
-    background: #86c232;
-}
 body {
     font-size: 16px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-    color: #222629;
+    color: #e4ddcf;
     text-align: center;
 }
 a {
@@ -30,22 +26,19 @@ li {
 .not-hidden {
     opacity: 100;
 }
+.card {
+    background-color: initial;
+}
+.border-bottom {
+    border-bottom-color: #e4ddcf;;
+}
 /* media */
 @media screen and (max-width: 960px) {
-    /* logo */
-    a.navbar-brand img {
-        height: 2.5em;
-        width: 2.5em;
-    }
     /* topnav */
     li.nav-item a {
         font-size: 0.7em;
     }
     /* home */
-    .home .fadedOne {
-        font-size: 3em;
-        margin-bottom: 0.4em;
-    }
     .home .fadedTwo {
         font-size: 1em;
     }
@@ -56,7 +49,8 @@ li {
     }
     /* about */
     section#about {
-        margin: 4em auto;
+        padding-top: 4em;
+        padding-bottom: 4em;
     }
     section#about h2 {
         font-size: 2.4em;
@@ -74,11 +68,6 @@ li {
     }
 }
 @media screen and (max-width: 600px) {
-    /* logo */
-    a.navbar-brand img {
-        height: 1.5em;
-        width: 1.5em;
-    }
     a.navbar-brand {
         padding: 0;
         margin-left: 1em !important;
@@ -90,7 +79,6 @@ li {
     li.nav-item a {
         text-align: left;
         font-size: 0.88em;
-        font-weight: normal;
     }
     li.nav-item a:hover {
         border-bottom-color: transparent;
@@ -101,8 +89,8 @@ li {
     }
     /* about */
     section#about {
-        padding: 1em 0;
-        margin: 1em auto;
+        padding-top: 2em;
+        padding-bottom: 1em;
     }
     section#about .underscore {
         margin: 0 auto 2.5em auto;
@@ -155,33 +143,9 @@ li {
         width: 70%;
         margin-bottom: 3em;
     }
-    section#contact .social {
-        display: block;
-        padding: 1em 0;
-        margin: 0 auto;
-        width: 70%;
-        border-right: none;
-        border-bottom: 0.7px solid rgba(255, 255, 255, 0.842);
-    }
-    section#contact .social:last-child {
-        border-bottom: none;
-    }
-    section#contact .social a {
-        font-size: 0.8em;
-    }
     /* footer */
-    .foot {
-        padding: 2.5em 0 2.5em 0;
-    }
     p#copy {
         font-size: 0.9em;
-    }
-    ul#follow-links li {
-        display: block;
-        margin: 2em auto;
-    }
-    ul#follow-links li#follow-twitter a, ul#follow-links li#follow-dribbble a {
-        padding: 0.8em 3em 0.8em 6em;
     }
     p#footer-about {
         font-size: 0.77em;
@@ -189,9 +153,6 @@ li {
 }
 @media screen and (max-width: 426px) {
     /* home */
-    .home .fadedOne {
-        font-size: 2em;
-    }
     .home .fadedTwo {
         font-size: 0.85em;
     }
@@ -238,8 +199,9 @@ li {
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
 }
-.navbar-brand img {
-    width: 2.5em;
+.navbar-brand {
+    font-size: 1.5rem !important;
+    color: #1e1e1e !important;
 }
 .navbar-brand:hover {
     -webkit-transform: scale(1.08) rotate(10deg) translate(0, 0) skew(0deg, 0deg);
@@ -250,18 +212,14 @@ li {
 
 /* topnav */
 .bg-nav {
-    background-color: #6b6e70;
+    background-color: #e4ddcf;
 }
 .navbar-toggler:focus {
     outline: none;
 }
-.navbar {
-    border-bottom: 4px solid #86c232;
-}
 .nav-item a {
     font-size: 1em;
-    font-weight: bold;
-    color: whitesmoke;
+    color: #1e1e1e !important;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -269,16 +227,12 @@ li {
     transition: all 0.3s ease-in-out;
 }
 nav.navbar-dark .navbar-nav .nav-link:hover {
-    color: #86c232;
     cursor: pointer;
 }
 nav.navbar-dark .navbar-nav .nav-link {
-    color: whitesmoke;
+    color: #1e1e1e;
     padding-left: 1.5em;
     padding-right: 1.5em;
-}
-nav.navbar-dark .navbar-nav .nav-link.active {
-    color: #86c232;
 }
 
 .overflow-wrap {
@@ -295,7 +249,7 @@ nav.navbar-dark .navbar-nav .nav-link.active {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    color: whitesmoke;
+    color: #e4ddcf;
 }
 .canvas {
     position: absolute;
@@ -303,7 +257,7 @@ nav.navbar-dark .navbar-nav .nav-link.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #2A2C2C;
+    background: #1e1e1e;
 }
 .intro-container {
     padding: 0 15%;
@@ -311,19 +265,6 @@ nav.navbar-dark .navbar-nav .nav-link.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.intro-container h1 {
-    z-index: 1;
-    pointer-events: none;
-    color: #86c232;
-    margin: 0 0 0.6em 0;
-    font-size: 4.2em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
 }
 .intro-container h2 {
     z-index: 1;
@@ -347,32 +288,30 @@ nav.navbar-dark .navbar-nav .nav-link.active {
     width: 20em;
     margin: 3em auto 0 auto;
     display: block;
-    color: whitesmoke;
+    color: #e4ddcf;
     padding: 1.4em 1.5em;
-    border: 0.2em solid whitesmoke;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
+    border-top: 0.2em solid #e4ddcf;
+    border-bottom: 0.2em solid #e4ddcf;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 .intro-container .check-portfolio:hover {
-    border-color: #86c232;
-    background: #86c232;
-    color: whitesmoke;
+    background: #e4ddcf;
+    color: #1e1e1e;
 }
 
 /* about */
+#aboutWrapper {
+    background-color: #1e1e1e;
+}
 #about {
     width: 100%;
     position: relative;
-    margin: 6em auto;
-    font-weight: none;
-    color: #474b4f;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    color: #e4ddcf;
 }
 #about h2 {
     position: relative;
@@ -394,7 +333,7 @@ nav.navbar-dark .navbar-nav .nav-link.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #86c232;
+    background: #e4ddcf;
     transform-origin: right;
     transition: 0.5s;
 }
@@ -406,7 +345,7 @@ nav.navbar-dark .navbar-nav .nav-link.active {
     position: relative;
     width: 5em;
     height: 0.2em;
-    background-color: #474b4f;
+    background-color: #e4ddcf;
     margin: 0 auto 3.5em auto;
     transition: 1s;
     transform: translateX(100px);
@@ -417,6 +356,8 @@ nav.navbar-dark .navbar-nav .nav-link.active {
     opacity: 1;
 }
 .card .frid {
+    background-color: #e4ddcf;
+    padding: 1.75rem;
     position: relative;
     width: 7.5em;
     transition: 1s;
@@ -480,7 +421,8 @@ img.me {
     font-size: 1.78em;
 }
 .info a {
-    color: #86c232;
+    color: #e4ddcf;
+    text-decoration: underline;
 }
 .skills {
     transition: 0.7s;
@@ -492,22 +434,25 @@ img.me {
     opacity: 1;
 }
 div .progress {
+    border: 1px solid #e4ddcf !important;
     position: relative;
     height: 2.3em;
     margin-bottom: 0.8em;
+    background-color: #e4ddcf;
 }
 .progress .d-flex {
     width: 80%;
 }
 div div.named-bar {
     width: 20%;
-    background: #86c232;
+    color: #1e1e1e;
+    background: #e4ddcf;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1em;
 }
 div .progress-bar[style] {
-    background: #61892f;
+    background: #1e1e1e;
     transition: 1.1s;
     transform-origin: left;
     transform: scaleX(0);
@@ -543,16 +488,18 @@ div .progress-bar[style] {
 .progress span {
     position: absolute;
     right: 1em;
+    mix-blend-mode: difference;
 }
 
 /* portfolio */
 #portfolio {
-    background-color: #f5f5f5;
+    background-color: #1e1e1e;
     padding: 6em 0 0;
     width: 100%;
     position: relative;
 }
 #portfolio h2 {
+    color: #e4ddcf;
     position: relative;
     display: inline-block;
     text-transform: uppercase;
@@ -572,7 +519,7 @@ div .progress-bar[style] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #86c232;
+    background: #e4ddcf;
     transform-origin: right;
     transition: 0.5s;
 }
@@ -584,7 +531,7 @@ div .progress-bar[style] {
     position: relative;
     width: 5em;
     height: 0.2em;
-    background-color: #474b4f;
+    background-color: #e4ddcf;
     margin: 0 auto 3.5em auto;
     transition: 1s;
     transform: translateX(100px);
@@ -608,35 +555,37 @@ div .progress-bar[style] {
 .showcase__description {
     font-family: 'Raleway', sans-serif;
 }
-.color-gray {
-    color: gray;
+.color-theme {
+    color: #e4ddcf;
 }
-.color-gray span {
-    color: #86c232;
+.color-theme span {
+    text-decoration: underline;
 }
-.color-gray ~ .btn-preview {
-    color: #fff;
-    background-color: #86c232;
-    border-color: #86c232;
+.color-theme ~ .btn-preview {
+    color: #1e1e1e;
+    background-color: #e4ddcf;
+    border-color: #e4ddcf;
 }
-.color-gray ~ .btn-preview:hover, .color-gray ~ .btn-preview:active {
-    color: #fff;
-    background-color: #78ae2d;
-    border-color: #78ae2d;
+.color-theme ~ .btn-preview:hover, .color-theme ~ .btn-preview:active {
+    color: #e4ddcf;
+    background-color: #1e1e1e;
+    border-right-color: transparent;
+    border-left-color: transparent;
 }
-.color-gray ~ .btn-preview:focus {
+.color-theme ~ .btn-preview:focus {
     box-shadow: unset;
 }
-.color-gray ~ .btn-visit {
-    color: #86c232;
-    border-color: #86c232;
+.color-theme ~ .btn-visit {
+    color: #e4ddcf;
+    border-top-color: #e4ddcf;
+    border-bottom-color: #e4ddcf;
 }
-.color-gray ~ .btn-visit:hover, .color-gray ~ .btn-visit:active {
-    color: #fff;
-    background-color: #86c232;
-    border-color: #86c232;
+.color-theme ~ .btn-visit:hover, .color-theme ~ .btn-visit:active {
+    color: #1e1e1e;
+    background-color: #e4ddcf;
+    border-color: #e4ddcf;
 }
-.color-gray ~ .btn-visit:focus {
+.color-theme ~ .btn-visit:focus {
     box-shadow: unset;
 }
 
@@ -644,8 +593,8 @@ div .progress-bar[style] {
 #contact {
     width: 100%;
     position: relative;
-    color: whitesmoke;
-    background: #86c232;
+    color: #e4ddcf;
+    background: #1e1e1e;
     padding: 10em 0;
 }
 #contact h1 {
@@ -653,6 +602,7 @@ div .progress-bar[style] {
     display: inline-block;
     line-height: 0.99em;
     font-size: 2.56em;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     transition: 0.5s;
@@ -669,7 +619,7 @@ div .progress-bar[style] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: whitesmoke;
+    background: #e4ddcf;
     transform-origin: right;
     transition: 0.5s;
 }
@@ -680,7 +630,6 @@ div .progress-bar[style] {
 #contact p {
     font-size: 1.3em;
     width: 50%;
-    font-weight: 600;
     margin: 1.5em auto;
     font-family: 'Raleway', sans-serif;
     transition: 1s;
@@ -692,13 +641,10 @@ div .progress-bar[style] {
 }
 .getInTouch {
     position: relative;
-    background: transparent url(./images/paper-plane.png) scroll no-repeat;
-    background-size: 2em;
-    background-position: 1em 50%;
-    color: whitesmoke;
-    border: 0.2em solid whitesmoke;
-    border-radius: 4px;
-    padding: 1.5em 0.9em 1.5em 3em;
+    color: #e4ddcf;
+    border-top: 0.2em solid #e4ddcf;
+    border-bottom: 0.2em solid #e4ddcf;
+    padding: 1.5em 0.9em 1.5em 0.9em;
     text-transform: uppercase;
     font-size: 0.89em;
     font-weight: 700;
@@ -718,122 +664,22 @@ div .progress-bar[style] {
     opacity: 1;
 }
 .getInTouch:hover {
-    color: #86c232;
-    border-color: whitesmoke;
-    background: url(./images/paper-plane2.png) scroll no-repeat;
-    background-size: 2em;
-    background-position: 1em 50%;
-    background-color: whitesmoke;
-}
-.socials {
-    padding: 0;
-    margin-bottom: 0;
-}
-#contact .social {
-    display: inline-block;
-    padding: 0 1em;
-    text-transform: uppercase;
-    border-right: 1px solid rgba(255, 255, 255, 0.842);
-}
-#contact .social:last-child {
-    border-right: none;
-}
-#contact .social a {
-    color: whitesmoke;
-    border-bottom: 1px solid transparent;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-}
-#contact .social a:hover {
-    border-bottom-color: whitesmoke;
+    color: #1e1e1e;
+    background-color: #e4ddcf;
 }
 
 /* footer */
 footer {
-    color: #6b6e70;
-    padding: 5em 0 7em 0;
-    background: #474b4f;
+    color: #e4ddcf;
+    padding: .75em 1em;
+    background: #1e1e1e;
 }
 #copy {
     margin: 0;
     font-size: 1.1em;
     text-transform: uppercase;
 }
-#copy a {
-    color: #61892f;
-    border-bottom: 1px solid transparent;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-}
-#copy a:hover {
-    border-bottom-color: #61892f;
-}
-#follow-links {
-    padding: 0;
-    margin: 2em auto 3em auto;
-}
-#follow-twitter a, #follow-dribbble a {
-    color: #6b6e70;
-    border: 1px solid #222629;
-    border-radius: 4px;
-    padding: 1em 0.9em 1em 3em;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: 700;
-    margin: 1em 0.5em 5em 0.5em;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-}
-#follow-twitter a {
-    background: transparent url(./images/twitter.png) scroll no-repeat;
-    background-size: 1.2em;
-    background-position: 1em 50%;
-    background-color: #222629;
-}
-#follow-twitter a:hover {
-    color: white;
-    border-color: #03a9f4;
-    background: url(./images/twitter2.png) scroll no-repeat;
-    background-size: 1.2em;
-    background-position: 1em 50%;
-    background-color: #03a9f4;
-}
-#follow-dribbble a {
-    background: transparent url(./images/dribbble.png) scroll no-repeat;
-    background-size: 1.2em;
-    background-position: 1em 50%;
-    background-color: #222629;
-}
-#follow-dribbble a:hover {
-    color: white;
-    border-color: #ea4c89;
-    background: url(./images/dribbble2.png) scroll no-repeat;
-    background-size: 1.2em;
-    background-position: 1em 50%;
-    background-color: #ea4c89;
-}
-#footer-about {
-    margin: 0;
-    font-size: 0.87em;
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
-}
-#footer-about a {
-    color: #a6a8a9;
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
-    border-bottom: 1px solid transparent;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-}
-#footer-about a:hover {
-    border-bottom-color: #a6a8a9;
+#follow-links #follow-linkedin {
+    position: relative;
+    bottom: 2.5px;
 }
