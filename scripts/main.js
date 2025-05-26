@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    document.getElementById("year").textContent = new Date().getFullYear();
 
     $(window).scroll(function() {
         // Fading the background elements
@@ -106,6 +107,48 @@ $(document).ready(function() {
         //     link: 'https://openclassify.com/',
         // },
         {
+            name: 'Transfer Travel',
+            thumbnail: 'transfertravel.png',
+            description: 'TransferTravel.com is the world’s leading secondary travel marketplace. Recover money from your unused travel plans, whether it’s an airline ticket, holiday booking, accommodation, or cruise.',
+            builtWith: 'Laravel, Angular & MySQL',
+            link: 'https://transfertravel.com/',
+        },
+        {
+            name: 'Running Imp',
+            thumbnail: 'runningimp.png',
+            description: 'Running Imp are the experts in running and mass participation event supplies, providing everything event organisers need to make their event a success.',
+            builtWith: 'Laravel, Next.js & MySQL',
+            link: 'https://runningimp.co.uk/',
+        },
+        {
+            name: 'Prestbury Travel',
+            thumbnail: 'prestburytravel.png',
+            description: 'The Prestbury Travel Group was founded in 1983 by Stella and Peter Bosworth and, with their children James & Emma, is one of only a few truly independent family-owned and run, luxury travel operators in the UK. With Emma as Sales & Marketing Director and James taking over as Managing Director, they have added a new dimension in driving the business forward.',
+            builtWith: 'Laravel, React & MySQL',
+            link: 'https://prestburytravel.co.uk/',
+        },
+        {
+            name: 'Tripsitta',
+            thumbnail: 'tripsitta.png',
+            description: 'Need a sitter for your Trip? Book Fully-Vetted childcare in just a click!',
+            builtWith: 'Laravel, Vue.js & PostgreSQL',
+            link: 'https://www.tripsitta.com/',
+        },
+        {
+            name: 'Marble Training',
+            thumbnail: 'marble.png',
+            description: 'Marble Training offers a range of health and safety courses, including CITB, CSCS, IOSH and NEBOSH, in various formats and locations.',
+            builtWith: 'Laravel, Next.js & MySQL',
+            link: 'https://marbletraining.co.uk/',
+        },
+        {
+            name: 'Mosque World',
+            thumbnail: 'mosqueworld.png',
+            description: 'A state of the art platform to help automate your Mosque processes and bring your online Mosque presence to life.',
+            builtWith: 'Laravel, Next.js & MySQL',
+            link: 'https://mosqueworld.com/',
+        },
+        {
             name: 'Academic Support',
             thumbnail: 'acasup.png',
             description: 'A website to help students with their assignment.',
@@ -125,13 +168,6 @@ $(document).ready(function() {
             description: 'We are all designers at heart. Design and order your custom bag.',
             builtWith: 'WordPress & React',
             link: 'https://my.bonabag.com/',
-        },
-        {
-            name: 'Celep',
-            thumbnail: 'celep.png',
-            description: 'A website for buying and selling cattle.',
-            builtWith: 'Laravel',
-            link: 'http://celep.com/',
         },
     ];
     
