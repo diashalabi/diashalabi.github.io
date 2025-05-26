@@ -56,8 +56,8 @@ $(document).ready(function() {
             percentage: 85,
         },
         {
-            name: 'JavaScript',
-            percentage: 85,
+            name: 'Next.js',
+            percentage: 95,
         },
         {
             name: 'PHP',
@@ -68,20 +68,36 @@ $(document).ready(function() {
             percentage: 90,
         },
         {
-            name: 'VueJS',
+            name: 'Vue.js',
             percentage: 85,
         },
         {
-            name: 'AngularJS',
-            percentage: 80,
+            name: 'Angular',
+            percentage: 85,
         },
         {
             name: 'React',
-            percentage: 85,
+            percentage: 90,
         },
         {
             name: 'Node.js',
-            percentage: 80,
+            percentage: 95,
+        },
+        {
+            name: 'JavaScript',
+            percentage: 85,
+        },
+        {
+            name: 'MySQL',
+            percentage: 90
+        },
+        {
+            name: 'PostgreSQL',
+            percentage: 90
+        },
+        {
+            name: 'Python',
+            percentage: 85
         },
     ];
 
