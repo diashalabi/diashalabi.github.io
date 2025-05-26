@@ -98,20 +98,13 @@ $(document).ready(function() {
 
     // Add portfolio
     const projects = [
-        {
-            name: 'OpenClassify',
-            thumbnail: 'openclassify.png',
-            description: 'OpenClassify is modular and one of the most advanced open source classified app script built with Laravel.',
-            builtWith: 'Laravel',
-            link: 'https://openclassify.com/',
-        },
-        {
-            name: 'Bonabag',
-            thumbnail: 'bonabag.png',
-            description: 'We are all designers at heart. Design and order your custom bag.',
-            builtWith: 'WordPress & React',
-            link: 'https://my.bonabag.com/',
-        },
+        // {
+        //     name: 'OpenClassify',
+        //     thumbnail: 'openclassify.png',
+        //     description: 'OpenClassify is modular and one of the most advanced open source classified app script built with Laravel.',
+        //     builtWith: 'Laravel',
+        //     link: 'https://openclassify.com/',
+        // },
         {
             name: 'Academic Support',
             thumbnail: 'acasup.png',
@@ -125,6 +118,13 @@ $(document).ready(function() {
             description: 'AiroLuggage provides a National and International Luggage and Baggage Delivery Service so travelling is safe, easy and stress-free.',
             builtWith: 'Laravel & VueJS',
             link: 'https://airoluggage.com/',
+        },
+        {
+            name: 'Bonabag',
+            thumbnail: 'bonabag.png',
+            description: 'We are all designers at heart. Design and order your custom bag.',
+            builtWith: 'WordPress & React',
+            link: 'https://my.bonabag.com/',
         },
         {
             name: 'Celep',
