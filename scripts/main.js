@@ -167,7 +167,7 @@ $(document).ready(function() {
         {
             name: 'Academic Support',
             thumbnail: 'acasup.png',
-            description: 'A website to help students with their assignment.',
+            description: 'The Office for Academic Support is an inter-university network of British teachers, academic supervisors, research-active staff and recruitment specialists. We are dedicated to upholding our principles of academic integrity, promoting learner gain, and supporting our partners in achieving their goals.',
             builtWith: 'Laravel',
             link: 'https://academicsupport.me/',
         },
